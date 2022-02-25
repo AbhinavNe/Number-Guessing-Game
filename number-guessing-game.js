@@ -5,8 +5,7 @@ const reset = document.querySelector('#resetButton');
 const messageBox = document.querySelector('#message');
 
 function genrateRandomvalue(){
-    // randomNum = Math.floor((Math.random() * 10) +1);    
-    randomNum = 9;
+    randomNum = Math.floor((Math.random() * 10) +1);    
 }
 
 function resetGame(){
@@ -52,7 +51,7 @@ function incrementClickCount(){
 }
 
 function checkIfGameIsOver(){
-    if(count > 10){ 
+    if(count > 3){ 
         let content = 'Game over, you are all out of tries. The number was ' + randomNum;
         let heading = document.createElement('h1');
         let textNode = document.createTextNode(content);
